@@ -18,27 +18,52 @@ html h1 tag e.g {h1}.addEventListener
 // we use append to add elements to the body
 //if we wanted to add hello world to the page we do this
 
-const body = document.body
-body.append('hello world')
+const body = document.body;
+body.append("hello world");
 
 //we can also append multiple things
-body.append("javascript","is fun")
-
+body.append("javascript", "is fun");
 
 //creating elements
-const div = document.createElement('div')
+const div = document.createElement("div");
 // add text to the created div
-div.innerText ='first inner html'
+div.innerText = "first inner html";
 //or
-div.textContent ="second inner html using textContent"
+div.textContent = "second inner html using textContent";
 //after creating an element we need to add it to the html body
 
 //rendering html within a div
-div.innerHTML="<strong>this is html rendered within a div</strong>"
+div.innerHTML = "<strong>this is html rendered within a div</strong>";
 
-body.append(div)
+body.append(div);
 //or we can create another element
-const strong = document.createElement('strong')
-strong.innerText ="this is strong text"
-body.append(strong)
+const strong = document.createElement("strong");
+strong.innerText = "this is strong text";
+body.append(strong);
 
+//removing elements
+//accessing the html elements
+
+const spanhi = document.querySelector("#hi");
+const spanbye = document.querySelector("#bye");
+const myName =document.querySelector("#martin")
+
+//removing bye from the html page
+
+spanbye.remove();
+
+//if we wanted to add bye back to the page
+
+div.append(spanbye)
+
+//accessing attribute e.g title
+
+console.log(spanhi.getAttribute('title'));
+
+// or you can use this
+
+console.log(spanhi.id)
+
+//we can use the setAttribute to set a different value to an attribute
+
+console.log(myName.id='junior')
