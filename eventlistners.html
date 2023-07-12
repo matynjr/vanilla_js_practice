@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .grandparent {
+      background: red;
+      height: 100px;
+      width: 10%;
+      margin: 0 auto;
+    }
+    .parent {
+      background: blue;
+      height: 80px;
+    }
+    .child {
+      background: yellow;
+      height: 60px;
+    }
+  </style>
+  <body>
+    <main>
+      <div class="grandparent">
+        <div class="parent">
+          <div class="child"></div>
+        </div>
+      </div>
+
+      <!-- click event -->
+      <div id="myButton"><button>button</button></div>
+      <!-- end click event -->
+<br>
+      <!-- input event -->
+      <input id="myInput" type="text">
+      <!-- end input -->
+     <br>
+     <br>
+    <!-- mouse event -->
+    <div id="myElement">test mouse events</div>
+    <!-- end mouse event -->
+
+    </main>
+  </body>
+  <script src="eventlistners.js"></script>
+</html>
