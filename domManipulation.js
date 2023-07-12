@@ -67,3 +67,19 @@ console.log(spanhi.id)
 //we can use the setAttribute to set a different value to an attribute
 
 console.log(myName.id='junior')
+
+//mainuplating class
+
+spanhi.classList.add("new-class")
+
+// removing a class
+
+spanhi.classList.remove("hi2")
+
+//toggle will remove a class if it exist or add it if it doesnot exits
+
+spanhi.classList.toggle("hi4",true)
+
+//manuplating the style elemeent
+
+spanhi.style.color ="red"
