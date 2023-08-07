@@ -26,8 +26,12 @@ body.append("javascript", "is fun");
 
 //creating elements
 const div = document.createElement("div");
+const section = document.createElement("section");
+body.append(section)
 // add text to the created div
 div.innerText = "first inner html";
+
+section.innerHTML ="<h1>my new section</h1>";
 //or
 div.textContent = "second inner html using textContent";
 //after creating an element we need to add it to the html body
@@ -45,12 +49,17 @@ body.append(strong);
 //accessing the html elements
 
 const spanhi = document.querySelector("#hi");
+
 const spanbye = document.querySelector("#bye");
 const myName =document.querySelector("#martin")
+const myNewName = document.querySelector("#martin")
+console.log(myNewName.id="arnold")
 
 //removing bye from the html page
 
 spanbye.remove();
+
+
 
 //if we wanted to add bye back to the page
 
@@ -66,11 +75,12 @@ console.log(spanhi.id)
 
 //we can use the setAttribute to set a different value to an attribute
 
-console.log(myName.id='junior')
+// console.log(myName.id='junior')
 
 //mainuplating class
 
 spanhi.classList.add("new-class")
+myNewName.classList.add("newclass2")
 
 // removing a class
 
@@ -78,8 +88,12 @@ spanhi.classList.remove("hi2")
 
 //toggle will remove a class if it exist or add it if it doesnot exits
 
-spanhi.classList.toggle("hi4",true)
+spanhi.classList.toggle("hi4")
 
+myNewName.classList.toggle("newclass2",true)
 //manuplating the style elemeent
 
 spanhi.style.color ="red"
+myNewName.style.color ="green"
+myNewName.style.backgroundColor="black"
+myName.style.fontSize="50px"
