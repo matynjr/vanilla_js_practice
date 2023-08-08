@@ -10,3 +10,15 @@ function toggle() {
 //when passed as a aparameter
 
 button.addEventListener('click',toggle)
+
+//example 2
+function firstAction(){
+    console.log('am the first action')
+    setTimeout(secondAction,2000)
+}
+function secondAction(){
+    console.log('am the second action')
+}
+
+setTimeout(firstAction,5000)
+secondAction()
